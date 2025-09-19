@@ -1,0 +1,5 @@
+# Here will files whitch not will tracking
+
+*.docx
+*.pdf
+
