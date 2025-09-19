@@ -1,0 +1,11 @@
+body {
+    background-image: url('../img/my_background.png');
+    font-family: "Times New Roman", serif;
+    font-size: 1.1em; /*Same as size="4" */
+    color: #333333;
+}
+
+h1 {
+    text-align: center;
+}
+
