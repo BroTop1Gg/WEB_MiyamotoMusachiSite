@@ -5,7 +5,89 @@ body {
     color: #333333;
 }
 
-h1 {
+/* h1 {
     text-align: center;
+} */
+h2 {
+    font-weight: bold;
 }
 
+/* Меню */
+.navigation-menu {
+    list-style-type: none; /* Прибираємо маркери-крапки */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 20px;   /* Відступ під меню */
+}
+
+.navigation-menu li {
+    display: inline-block; /* Робимо елементи списку горизонтальними */
+}
+
+.navigation-menu li a {
+    display: block;              /* Робить всю область кнопки клікабельною */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;       /* Прибираємо підкреслення */
+}
+
+/* Зміст */
+.table-of-contents {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Забираємо відступи тегу <p> що в списку*/
+.table-of-contents li p {
+    margin: 0;
+}
+
+.table-of-contents li {
+    margin-bottom: 10px; /* Вертикальний відступ між пунктами змісту */
+}
+
+.table-of-contents li:last-child {
+    margin-bottom: 0;
+}
+
+.table-of-contents a {
+    text-decoration: none;   /* Прибираємо підкреслення у посилань */
+    color: #000000;
+    font-weight: bold;
+}
+
+.my-image {
+    float: right;
+    margin-left: 15px;
+}
+
+/* для вмісту сторінки */
+.layout-table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.main-content {
+    width: 70%;
+    vertical-align: top;
+}
+
+.side-column {
+    width: 15%;
+}
+
+/* HR */
+.separator {
+    border: none;
+    border-top: 3px solid black;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.separator-narrow {
+    border: none;
+    border-top: 2px solid black;
+    width: 100%;
+    margin: 15px 0;
+}

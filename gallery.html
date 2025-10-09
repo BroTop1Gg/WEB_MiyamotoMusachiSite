@@ -1,78 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gallery</title>
+        <title>Галерея</title>
         <link rel="shortcut icon" href="img/icon_no_bg.png" type="image/png">
         <link rel="stylesheet" href="css/main.css">
+>
+        <style>
+            body {
+                background-color: #f8f8f8; 
+            }
+            .gallery-item img {
+                border: 1px solid #dddddd;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                background-color: white;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .gallery-item em {
+                display: block;
+                margin-top: 10px;
+                color: #555555;
+                font-size: 0.9em;
+                text-align: center;
+            }
+        </style>
     </head>
-    <body class="body">
-        <table width="100%">
+    
+    <body>
+        <table class="layout-table">
         <tr>
-
-            <td width="15%"></td>
-
-            <td width="70%">
+            <td class="side-column"></td>
+            <td class="main-content">
                 
-                <h1 align="center"><strong><font color="black"> Галерея образів </font></strong></h1>
+                <h1 style="color: black; font-weight: bold; text-align:center;">Галерея образів</h1>
+                
+                <ul class="navigation-menu">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="books.html">Твори</a></li>
+                </ul>
+                
+                <hr class="separator">
 
-                <hr color="black" width="100%" size="5">
-
-                <p align="center">
+                <div class="gallery-item">
                     <img src="img/Kobokumeigekizu.jpg" width="280" alt="Дрозд на засохлій гілці">
-                    <br>
-                    <i><font color="black">"Дрозд на засохлій гілці" - одна з найвідоміших робіт Мусаші в стилі сумі-е.</font></i>
-                </p>
+                    <em>"Дрозд на засохлій гілці" - одна з найвідоміших робіт Мусаші в стилі сумі-е.</em>
+                </div>
 
-                <hr color="black" width="90%">
+                <hr class="separator">
 
-                <p align="center">
+                <div class="gallery-item">
                     <img src="img/Miyamoto_Musashi_RoGan-zu(left).jpg" width="800" alt="Очерет і гуси">
-                    <br>
-                    <i><font color="gray">"Очерет і гуси" - ще одна, хоч і менш популярна робота Мусаші.</font></i>
-                </p>
+                    <em>"Очерет і гуси" - ще одна, хоч і менш популярна робота Мусаші.</em>
+                </div>
 
-                <hr color="black" width="90%">
+                <hr class="separator">
 
-                <p align="center">
+                <div class="gallery-item">
                     <img src="img/Miyamoto_Musashi_RoGan-zu(right).jpg" width="800" alt="Очерет і гуси">
-                    <br>
-                    <i><font color="gray">"Очерет і гуси" - ще одна, хоч і менш популярна робота Мусаші.</font></i>
-                </p>
+                    <em>"Очерет і гуси" - ще одна, хоч і менш популярна робота Мусаші.</em>
+                </div>
 
-                <hr color="black" width="90%">
+                <hr class="separator">
 
-                <p align="center">
+                <div class="gallery-item">
                     <img src="img/Musashi_ts_pic.jpg" width="520" alt="Міямото Мусаші у розквіті сил">
-                    <br>
-                    <i><font color="black">Міямото Мусаші у розквіті сил, володіючий двома боккенами; гравюра на дереві Утаґави Кунійоші</font></i>
-                </p>
+                    <em>Міямото Мусаші у розквіті сил, володіючий двома боккенами; гравюра на дереві Утаґави Кунійоші</em>
+                </div>
 
-                <hr color="black" width="90%">
+                <hr class="separator">
 
-                <p align="center">
-
-                    <!--Made clikable area here-->
-                    <!--"160,100,275,320" * 1.25 = "200,125,344,400"-->
-                    <!--"380,30,525,310" * 1.25 = "475,38,656,388"-->
-
+                <div class="gallery-item">
                     <map name="infographics">
                         <area shape="rect" coords="200,125,344,400" href="https://en.wikipedia.org/wiki/Sasaki_Kojir%C5%8D" alt="Кодзіро">
                         <area shape="rect" coords="475,38,656,388" href="index.html" alt="Мусаші">
                     </map>
                     <img src="img/Musashi_and_Kojiro_statue_in_Ganryujima.jpg" width="800" alt="Бронзові статує Мусаші та Кодзіро" usemap="#infographics">
-                    
-                    <br>
-                    <i><font color="black"></font>Бронзові статуї Міямото Мусасі та Сасакі Кодзіро на острові Ганрюдзіма. Статуя Мусасі знаходиться праворуч, а статуя Кодзіро — ліворуч.</font></i>
-                </p>
+                    <em>Бронзові статуї Міямото Мусасі та Сасакі Кодзіро на острові Ганрюдзіма. Статуя Мусасі знаходиться праворуч, а статуя Кодзіро — ліворуч.</em>
+                </div>
 
-                <hr color="black" width="100%" size="5">
+                <hr class="separator">
 
             </td>
-
-            <td width="15%"></td>
-
+            <td class="side-column"></td>
         </tr>
         </table>
     </body>
