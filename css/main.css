@@ -10,6 +10,7 @@ body {
 } */
 h2 {
     font-weight: bold;
+    color:#272727;
 }
 
 /* Меню */
@@ -21,7 +22,7 @@ h2 {
     margin-bottom: 20px;   /* Відступ під меню */
 }
 
-.navigation-menu li {
+.navigation-menu li { 
     display: inline-block; /* Робимо елементи списку горизонтальними */
 }
 
