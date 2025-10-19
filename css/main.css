@@ -3,6 +3,10 @@ body {
     font-family: "Times New Roman", serif;
     font-size: 1.1em; /*Same as size="4" */
     color: #333333;
+    
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 /* h1 {
@@ -15,22 +19,42 @@ h2 {
 
 /* Меню */
 .navigation-menu {
-    list-style-type: none; /* Прибираємо маркери-крапки */
+    list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center;
-    margin-bottom: 20px;   /* Відступ під меню */
+    margin-bottom: 20px;
 }
 
 .navigation-menu li { 
-    display: inline-block; /* Робимо елементи списку горизонтальними */
+    display: inline-block;
+    text-decoration: none;
 }
 
 .navigation-menu li a {
-    display: block;              /* Робить всю область кнопки клікабельною */
+    display: block;
     text-align: center;
     padding: 14px 20px;
-    text-decoration: none;       /* Прибираємо підкреслення */
+    text-decoration: none;
+}
+
+/* table of terms */
+.table-of-terms {
+    border-collapse: collapse;
+    border: 2px solid rgb(0, 0, 0);
+    letter-spacing: 1px;
+    width: 100%;
+
+    /*shadows and gradient*/
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background: #ffffff;
+    background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(219, 219, 219, 1) 100%);
+}
+
+.table-of-terms th,
+.table-of-terms td {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 8px 10px;
 }
 
 /* Зміст */
@@ -39,13 +63,12 @@ h2 {
     margin: 20px 0;
 }
 
-/* Забираємо відступи тегу <p> що в списку*/
 .table-of-contents li p {
     margin: 0;
 }
 
 .table-of-contents li {
-    margin-bottom: 10px; /* Вертикальний відступ між пунктами змісту */
+    margin-bottom: 10px;
 }
 
 .table-of-contents li:last-child {
@@ -53,7 +76,7 @@ h2 {
 }
 
 .table-of-contents a {
-    text-decoration: none;   /* Прибираємо підкреслення у посилань */
+    text-decoration: none;
     color: #000000;
     font-weight: bold;
 }
@@ -91,4 +114,41 @@ h2 {
     border-top: 2px solid black;
     width: 100%;
     margin: 15px 0;
+}
+
+/* info cards */
+.info-card-left {
+    justify-content: center;
+    border: 1px solid black;
+    padding: 0px 10px;
+    margin-right: 30px;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    /* shadows */
+    box-shadow: 10px 10px 53px -16px rgba(0,0,0,0.76) inset;
+    -webkit-box-shadow: 10px 10px 53px -16px rgba(0,0,0,0.76) inset;
+    -moz-box-shadow: 10px 10px 53px -16px rgba(0,0,0,0.76) inset;
+
+    /* gradient */
+    background: #EEAECA;
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.info-card-right {
+    justify-content: center;
+    border: 1px solid black;
+    padding: 0px 10px;
+    margin-left: 30px;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    /* shadows */
+    box-shadow: 10px 10px 53px -16px rgba(0,0,0,0.76) inset;
+    -webkit-box-shadow: 10px 10px 53px -16px rgba(0,0,0,0.76) inset;
+    -moz-box-shadow: 10px 10px 53px -16px rgba(0,0,0,0.76) inset;
+
+    /* gradient */
+    background: #EEAECA;
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
